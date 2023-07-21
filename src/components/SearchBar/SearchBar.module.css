@@ -1,0 +1,51 @@
+.searchBar{
+    position: relative;
+}
+
+.input{
+    border:none;
+    border-bottom: 2px solid #05062c;
+    background: transparent;
+    color:#fff;
+    position: absolute;
+    animation-name: searchBarMoveInput;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.button{
+    position: absolute;
+    animation-name: searchBarMoveButton;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    border-radius: 50px;
+    background-color: #068a94;
+    font-family: cursive;
+}
+.input::placeholder{
+    color: #05062c;
+}
+
+
+
+@keyframes searchBarMoveInput{
+    0%{
+        right:80vw;
+    }
+    100%{
+        right:0%;
+        transform: translate(-40%,-20%);
+        
+    }
+}
+
+@keyframes searchBarMoveButton{
+    0%{
+        right:110vw;
+    }
+    100%{
+        right:0%;
+        transform: translateY(-20%)
+    }
+}

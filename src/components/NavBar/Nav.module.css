@@ -1,0 +1,68 @@
+:root {
+    --button-color: #068a94;
+  }
+
+.navBar{
+    height: 40px;
+    width:100%;
+    position: relative;
+}
+
+.random{
+    animation-name: buttonAppears;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+.about{
+    animation-name: buttonAppears;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+.home{
+    animation-name: buttonAppears;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+.logout{
+    animation-name: buttonAppears;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+.favorites{
+    animation-name: buttonAppears;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    background-color: var(--button-color);
+    border-radius: 50px;
+}
+
+
+@keyframes buttonAppears{
+    from{
+        transform: translateY(-30px)
+    }
+    
+    to{
+        transform:translateY(0px);
+    }
+    
+}
+
+

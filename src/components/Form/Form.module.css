@@ -1,0 +1,97 @@
+.wrapper{
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.meteoro{
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    bottom:0%;
+    animation-name: viajeMeteoro;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,1,0,-0.01);
+}
+
+.meteoro img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.nave{
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    right:50vw;
+    bottom:0%;
+    transform: translateX(-350px);
+    animation-name: saltoNave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.nave img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@keyframes saltoNave{
+    0%{
+        transform: translateY(0px);
+    }
+    18.3%{
+        transform: translateY(-50px);
+    }
+    30.3%{
+        transform: translateY(-25px);
+    }
+    55%{
+        transform:translateY(-110px)
+    }
+    70%{
+        transform: translateY(-70px);
+    }
+  
+    85%{
+        transform: translateY(-90px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes viajeMeteoro{
+    0%{
+        right:0%;
+    }
+    100%{
+        right:100%
+    }
+}
+
+label{
+    color:rgb(2, 56, 6);
+    font-weight: 500;
+}
+
+.formWrapper{
+    transform: translate(0vw,0vh)
+}
+
+.span{
+    color: rgb(180, 11, 11)
+}
+
+.divImg{
+    position: absolute;
+}
+.logo{
+   
+    height: 150px;
+    width: 300px;
+}
